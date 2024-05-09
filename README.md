@@ -3,6 +3,7 @@
 ## New Features:
 - JDK-8180352 - Add Stream.toList() method
 - JEP 395: Records
+- JDK-8250623 - JEP 394: Pattern Matching for instanceof
 
 ## New Incubator modules:
 - JEP 338: Vector API (Incubator)
@@ -12,7 +13,6 @@
 #### Settings > Build, Execution, Deployment > Compiler > Java Compiler :
 
 -- Project bytecode version: 16
-
 -- Javac Options > Additional command line parameters: --add-modules [module package]
 
 example: --add-modules jdk.incubator.vector
