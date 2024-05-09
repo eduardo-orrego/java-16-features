@@ -8,6 +8,9 @@
 ## New Incubator modules:
 - JEP 338: Vector API (Incubator)
 
+## New Preview Features:
+- JEP 397: Sealed Classes (Second Preview)
+
 ## Configurations to use "Incubator modules" in Java 16
 
 #### Settings > Build, Execution, Deployment > Compiler > Java Compiler :
@@ -22,3 +25,16 @@ example: --add-modules jdk.incubator.vector
 -- Build and Run > Modify Options > Add VM Options> VM Options : --add-modules [module package]
 
 example: --add-modules jdk.incubator.vector
+
+## Configurations to use "Preview" features in Java 16
+
+#### Settings > Build, Execution, Deployment > Compiler > Java Compiler :
+
+-- Project bytecode version: 16
+-- Javac Options > Override compiler parameters per-module: > click "+" button > Add Module :
+- Module: java-15-features
+- Compilation Options: --enable-preview
+
+Run/Debug Configurations > Application > [Choose Application] :
+
+Build and Run > Modify Options > Add VM Options : --enable-preview
